@@ -1,4 +1,4 @@
-(https://raw.githubusercontent.com/alanguev1/Mlops-proyecto/master/clean_datasets/steam.png)
+![steam](clean_datasets/steam.png)
 
 
 # Proyecto MLOps: Sistema de Recomendación de Videojuegos para Usuarios de Steam.
