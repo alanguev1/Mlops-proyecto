@@ -1,7 +1,7 @@
 import pandas as pd
 
-game_item = pd.read_parquet('./clean_datasets/game_items.parquet')
-all_dfs = pd.read_parquet('./clean_datasets/all_dfs.parquet')
+game_item = pd.read_parquet('clean_datasets/game_items.parquet')
+all_dfs = pd.read_parquet('clean_datasets/all_dfs.parquet')
 
 def developer(developer:str):
   '''
