@@ -41,3 +41,8 @@ Realizar un Modelo de Machine learning que retorne una lista de 5 juegos similar
 - Numpy <img src="clean_datasets/logonumpy.svg" alt="Python" width="20"/>
 - Sklearn <img src="clean_datasets/logosk.png" alt="Python" width="20"/>
 - FastAPI <img src="clean_datasets/logofastapi.png" alt="Python" width="20"/>
+
+# Links
+- Deploy en Render: https://proyecto-ml-2feq.onrender.com/docs
+- Video en Youtube: 
+
