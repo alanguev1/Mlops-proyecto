@@ -12,19 +12,14 @@ Creación del primer modelo de Machine Learning (end to end) que resuelva un pro
 # Etapa de ingeniería de datos
 En esta etapa de ingeniería de datos se realizó un proceso de ETL, extracción, transformación y carga donde se recibieron 3 archivos JSON con información acerca de los videjuegos, los jugadores y las reseñas de estos.
 
-Link: 
-
 Fuente de los datos: https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj
 
 # Etapa de análisis de datos
 En esta etapa se realizo el EDA, analisis exploratorio de datos donde empezamos con una conversión de los datos verificando datos nulos, duplicados, outliers y el formato de los datos para posteriormente realizar el análisis de estos mediante graficos.
 
-Link: 
-
 # Sistema de recomendación
 Una vez completadas las etapas anteriores, los datos se encuentran preparados para las respectivas funciones y el sistema de recomendación los cuales podrán ser consultados mediante el framework FastAPI.
 
-Linkl FastAPI :
 
 - def developer( developer: str ): Devuelve la cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
 
