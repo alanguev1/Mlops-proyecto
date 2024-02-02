@@ -44,5 +44,6 @@ Realizar un Modelo de Machine learning que retorne una lista de 5 juegos similar
 
 # Links
 - Deploy en Render: https://proyecto-ml-2feq.onrender.com/docs
-- Video en Youtube: 
-
+- Video en Youtube: https://youtu.be/Ecx7kUguqwU
+- Github: https://github.com/alanguev1/Mlops-proyecto/tree/master
+- Archivo donde se realizó el trabajo principal con los datos: https://github.com/alanguev1/Mlops-proyecto/blob/master/piml.ipynb
