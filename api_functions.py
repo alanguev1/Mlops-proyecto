@@ -48,26 +48,29 @@ def user_data(user_id:str):
 
   return  res
 
-def user_for_genre(genre:str):
-  '''
-  Devuelve el usuario con mas horas jugadas para el genero dado 
-  y una lista de acumulaciones de horas jugadas por año
-  '''
-  df = game_item[game_item['genres']==genre]
+def user_for_genre(genre: str):
+    '''
+    Devuelve el usuario con más horas jugadas para el género dado 
+    y una lista de acumulaciones de horas jugadas por año
+    '''
+    # Utiliza .loc para filtrar el DataFrame basado en la condición
+    df = game_item.loc[game_item['genres'].apply(lambda genres: genre in genres)]
 
-  user = df.groupby('user_id')['playtime_forever'].sum().sort_values(ascending=False).index[0]
-  hours = df[df['user_id']==user].groupby('release_date')['playtime_forever'].sum()
+    if df.empty:
+        return {"Mensaje": f"No se encontraron datos para el género {genre}"}
 
-  year = []
-  for i,x in enumerate(hours):
-    if x!=0:
-      year.append({"Año":hours.index[i].item(),"Horas":int(x)})
+    user = df.groupby('user_id')['playtime_forever'].sum().sort_values(ascending=False).index[0]
+    hours = df[df['user_id'] == user].groupby('release_date')['playtime_forever'].sum()
 
-  res = {
-    f"Usuario con mas horas jugadas para Genero {genre}":user,
-    "Horas Jugadas": year
-  }
-  return res
+    # Utiliza str(index) para convertir el índice a una cadena
+    year = [{"Año": str(index), "Horas": int(value)} for index, value in hours.items() if value != 0]
+
+    res = {
+        f"Usuario con más horas jugadas para el género {genre}": user,
+        "Horas Jugadas": year
+    }
+    return res
+
 
 def best_developer_year(year:int):
   '''
